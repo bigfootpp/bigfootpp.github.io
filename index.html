@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="darkreader" content="NOT-DARK">
-  <title>Bigfoot, LuaU Systems Developer</title>
-  <meta name="description" content="Bigfoot's portfolio, LuaU systems developer specializing in AI, state machines, and physics engines for Roblox">
+  <title>bigfoot — luau systems</title>
+  <meta name="description" content="bigfoot, luau scripter for roblox. boss ai, npc logic, physics, backends. readable code, no fluff.">
   <link href="https://fonts.googleapis.com/css2?display=swap&family=JetBrains+Mono:wght@300;400;500;600;700" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -21,85 +21,85 @@
   <div class="nav-inner">
     <a href="#top" class="nav-logo">~/bigfoot<span class="logo-cursor">_</span></a>
     <div class="nav-links">
-      <a href="#skills" class="nav-link" data-section="skills">Skills</a>
-      <a href="#work" class="nav-link" data-section="work">Work</a>
-      <a href="#pricing" class="nav-link" data-section="pricing">Pricing</a>
-      <a href="#contact" class="nav-link nav-cta" data-section="contact">Contact</a>
+      <a href="#skills" class="nav-link" data-section="skills">./skills</a>
+      <a href="#work" class="nav-link" data-section="work">./work</a>
+      <a href="#pricing" class="nav-link" data-section="pricing">./rates</a>
+      <a href="#contact" class="nav-link nav-cta" data-section="contact">./contact</a>
     </div>
   </div>
 </nav>
 
 <!-- Hero -->
 <section class="hero" id="top">
-  <div class="hero-badge">Available for commissions</div>
-  <h1><span id="typing-text" data-text="I build systems for Roblox"></span><span class="typing-cursor">|</span></h1>
-  <p class="hero-sub" id="hero-sub" data-text="State machines, AI, physics engines. Clean, configurable code, no UI, no assets, just logic."></p>
+  <div class="hero-badge">[status: open]</div>
+  <h1><span id="typing-text" data-text="luau systems"></span><span class="typing-cursor">|</span></h1>
+  <p class="hero-sub" id="hero-sub" data-text="boss ai, npc logic, backends. you get readable code + a config, not a black box. no ui, no builds, just systems."></p>
   <div class="hero-skills">
-    <span class="skill-tag">Pathfinding</span>
-    <span class="skill-tag">State Machines</span>
-    <span class="skill-tag">Physics Prediction</span>
-    <span class="skill-tag">LLM Integration</span>
-    <span class="skill-tag">Backend Systems</span>
+    <span class="skill-tag">pathfinding</span>
+    <span class="skill-tag">state-machines</span>
+    <span class="skill-tag">ball-physics</span>
+    <span class="skill-tag">http + llm</span>
+    <span class="skill-tag">datastore</span>
   </div>
   <div class="hero-actions">
-    <a href="#work" class="btn-primary">View projects</a>
-    <a href="#pricing" class="btn-ghost">Pricing</a>
+    <a href="#work" class="btn-primary">ls ./work</a>
+    <a href="#pricing" class="btn-ghost">cat rates.txt</a>
   </div>
 </section>
 
 <!-- Skills -->
 <section id="skills">
   <div class="section-header">
-    <span class="section-tag">about</span>
-    <h2>Skills & Experience</h2>
+    <span class="section-tag">cat ./skills.txt</span>
+    <h2>what i do</h2>
   </div>
   <div class="skills-grid">
     <div class="skill-card">
       <div class="skill-icon">
         <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
       </div>
-      <h4>AI & State Machines</h4>
-      <p>Boss AI with 7+ abilities, NPC behavior trees, UE5-style animation state machines with transition blending and input buffering.</p>
+      <h4>boss ai</h4>
+      <p>7 attacks, patrol / chase switching, cooldowns + hitboxes handled. doesn't stand still staring at walls.</p>
     </div>
     <div class="skill-card">
       <div class="skill-icon">
         <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
       </div>
-      <h4>Physics & Prediction</h4>
-      <p>Real-time trajectory prediction, custom physics engines, ball manipulation systems.</p>
+      <h4>ball physics</h4>
+      <p>trajectory prediction for soccer stuff. bounces, interception points, no jitter.</p>
     </div>
     <div class="skill-card">
       <div class="skill-icon">
         <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
       </div>
-      <h4>External APIs</h4>
-      <p>HttpService integration for LLM-powered NPCs, external databases, and real-time data sync.</p>
+      <h4>http + llm</h4>
+      <p>npcs that talk through an api. keeps context, rate-limits + retries so it doesn't die mid-game.</p>
     </div>
     <div class="skill-card">
       <div class="skill-icon">
         <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
       </div>
-      <h4>Game Systems</h4>
-      <p>Round management, game loops, Leaderstats, DataStore backends, admin tools, complete system architecture.</p>
+      <h4>game loop</h4>
+      <p>rounds, datastore, leaderstats, admin commands. the boring stuff, done right.</p>
     </div>
   </div>
   <div class="process-block">
-    <h4>How I work</h4>
+    <h4>how this goes</h4>
     <div class="process-steps">
       <div class="process-step">
         <span class="step-num">01</span>
-        <strong>Spec</strong>
-        <span>We define exactly what you need</span>
+        <strong>you explain</strong>
+        <span>send a vid + budget. i say yes or no</span>
       </div>
       <div class="process-step">
         <span class="step-num">02</span>
-        <strong>Build</strong>
-        <span>I code with clean architecture</span>
+        <strong>i build</strong>
+        <span>small updates, no disappearing</span>
       </div>
       <div class="process-step">
         <span class="step-num">03</span>
-        <strong>Deliver</strong>
-        <span>You get configurable code</span>
+        <strong>you get source</strong>
+        <span>commented + config on top</span>
       </div>
     </div>
   </div>
@@ -108,20 +108,20 @@
 <!-- Work -->
 <section id="work">
   <div class="section-header">
-    <span class="section-tag">portfolio</span>
-    <h2>Projects</h2>
+    <span class="section-tag">ls ./work/</span>
+    <h2>selected work</h2>
   </div>
 
   <!-- Boss AI -->
   <div class="project-card featured">
     <div class="project-info full-width">
-      <span class="project-type">Advanced Commission</span>
-      <h3>Boss AI, Piggy</h3>
-      <p>Boss AI with 7 unique abilities, pathfinding, and state machine architecture. The boss dynamically switches between patrol, chase, and attack states based on player distance and line of sight. Each ability has its own cooldown, animation, and hitbox logic.</p>
+      <span class="project-type">commission — piggy boss</span>
+      <h3>piggy boss ai</h3>
+      <p>7 attacks. patrols, chases, picks attacks by range + line of sight. cooldowns, anims, hitboxes all wired.</p>
       <div class="project-tags">
-        <span class="tag">State Machine</span>
-        <span class="tag">Pathfinding</span>
-        <span class="tag">7 Abilities</span>
+        <span class="tag">statemachine</span>
+        <span class="tag">pathfinding</span>
+        <span class="tag">7-attacks</span>
         
       </div>
     </div>
@@ -135,12 +135,12 @@
       </div>
     </div>
     <div class="project-info">
-      <span class="project-type">Finished Game</span>
-      <h3>AI Bot, LLM NPC</h3>
-      <p>Roblox integration with external LLM via HttpService. Players could have dynamic conversations with an NPC that maintained context and responded intelligently. Built rate-limiting and retry logic.</p>
+      <span class="project-type">shipped — ai npc</span>
+      <h3>llm npc</h3>
+      <p>npc you can actually talk to. remembers context, stays in character. won't crash when roblox throttles.</p>
       <div class="project-tags">
-        <span class="tag">HttpService</span>
-        <span class="tag">LLM Integration</span>
+        <span class="tag">httpservice</span>
+        <span class="tag">llm</span>
         
       </div>
     </div>
@@ -154,12 +154,12 @@
       </div>
     </div>
     <div class="project-info">
-      <span class="project-type">Finished Game</span>
-      <h3>WordChain</h3>
-      <p>Multiplayer word game with server-authoritative logic. The server validates every letter addition, checks word validity against a dictionary, and handles turn timing.</p>
+      <span class="project-type">shipped — wordchain</span>
+      <h3>wordchain</h3>
+      <p>turn-based word game. server checks every letter, validates words, runs timers. client trusted with nothing.</p>
       <div class="project-tags">
-        <span class="tag">Server-Authoritative</span>
-                <span class="tag">Multiplayer</span>
+        <span class="tag">server-side</span>
+                <span class="tag">multiplayer</span>
       </div>
     </div>
   </div>
@@ -167,24 +167,24 @@
   <!-- Tech Demos -->
   <div class="tech-demos">
     <div class="section-header" style="margin-top: 3rem;">
-      <span class="section-tag">tech demos</span>
-      <h2>Core Systems</h2>
+      <span class="section-tag">ls ./demos/</span>
+      <h2>stuff that works</h2>
     </div>
     <div class="demo-grid">
       <div class="demo-card">
         <div class="demo-header">
-          <h4>Animation State Machine</h4>
-          <span class="demo-status">Core complete</span>
+          <h4>anim statemachine</h4>
+          <span class="demo-status">working</span>
         </div>
-        <p>UE5-style animation state machine for combat systems. Features: transition blending and input buffering.</p>
+        <p>combat anims with blending + input buffering. no moonwalk transitions.</p>
         
       </div>
       <div class="demo-card">
         <div class="demo-header">
-          <h4>Physics Prediction</h4>
-          <span class="demo-status">Core complete</span>
+          <h4>ball prediction</h4>
+          <span class="demo-status">working</span>
         </div>
-        <p>Real-time ball trajectory prediction for soccer mechanics. Calculates bounce physics and player interception points.</p>
+        <p>shows where the ball lands + who gets there first. bounce math included.</p>
         
       </div>
     </div>
@@ -194,68 +194,68 @@
 <!-- Pricing -->
 <section id="pricing">
   <div class="section-header">
-    <span class="section-tag">pricing</span>
-    <h2>Rates</h2>
+    <span class="section-tag">cat ./rates.txt</span>
+    <h2>rates</h2>
   </div>
   <div class="pricing-grid">
     <div class="price-card">
-      <div class="price-popular">Entry level</div>
- <h4>Basic Scripts</h4>
+      <div class="price-popular">small</div>
+ <h4>small scripts</h4>
       <div class="price-amount">3,000</div>
-      <div class="price-currency">R$ minimum</div>
-      <p>Simple tools, admin commands, door systems, basic NPCs.</p>
+      <div class="price-currency">R$ min</div>
+      <p>tools, doors, admin commands, basic npcs.</p>
     </div>
     <div class="price-card highlight">
-      <div class="price-popular">Most common</div>
-      <h4>Game Systems</h4>
+      <div class="price-popular">picked most</div>
+      <h4>game systems</h4>
       <div class="price-amount">8,000</div>
-      <div class="price-currency">R$ typical</div>
-      <p>Round systems, backends, gameplay mechanics.</p>
+      <div class="price-currency">R$ usual</div>
+      <p>rounds, backends, gameplay stuff.</p>
     </div>
     <div class="price-card">
-      <div class="price-popular">Advanced</div>
- <h4>Complex Systems</h4>
+      <div class="price-popular">heavy</div>
+ <h4>big systems</h4>
       <div class="price-amount">15,000</div>
-      <div class="price-currency">R$+ for complex work</div>
-      <p>Boss AI with multiple abilities, physics engines, full game loops, LLM integration.</p>
+      <div class="price-currency">R$+ and up</div>
+      <p>boss ai, physics, full loops, llm stuff.</p>
     </div>
   </div>
   <div class="pricing-terms">
     <div class="term">
-      <strong>Payment</strong>
-      <span>Negotiable (Robux, client covers 30% tax)</span>
+      <strong>payment</strong>
+      <span>robux, you cover the 30% tax</span>
     </div>
     <div class="term">
-      <strong>Turnaround</strong>
-      <span>Typically 1-3 weeks depending on complexity</span>
+      <strong>delay</strong>
+      <span>1-3 weeks. depends what you ask</span>
     </div>
     <div class="term">
-      <strong>Deliverables</strong>
-      <span>Clean scripts, configuration options</span>
+      <strong>you get</strong>
+      <span>source + config, commented</span>
     </div>
   </div>
   <div class="pricing-note">
     <span class="note-icon">!</span>
-    <p>I don't do revshare, staff positions, or projects without a clear budget. If your idea is still vague, we can scope it together first.</p>
+    <p>no revshare, no staff roles, no “no budget” projects. vague idea? we'll scope it first.</p>
   </div>
 </section>
 
 <!-- Contact -->
 <section id="contact">
   <div class="section-header">
-    <span class="section-tag">contact</span>
-    <h2>Start a project</h2>
+    <span class="section-tag">./contact.sh</span>
+    <h2>dm me</h2>
   </div>
   <div class="contact-content">
     <div class="contact-info">
-      <p>Send me a DM on Discord with:</p>
+      <p>$ discord --dm @bigfoot302 --with:</p>
       <ul>
-        <li>What you're building</li>
-        <li>What systems you need</li>
-        <li>Your budget range</li>
-        <li>Timeline (if any)</li>
+        <li>what you're making</li>
+        <li>what system you need</li>
+        <li>budget</li>
+        <li>deadline, if any</li>
       </ul>
-      <p>I'll respond when I'm available.</p>
+      <p>i reply when i'm around. no forms.</p>
     </div>
     <a href="https://discord.com/users/823953434276790313" class="discord-btn" target="_blank" rel="noopener">
       <svg viewBox="0 0 40 40" width="1.4em" height="1.4em" fill="currentColor"><path d="M33.2,8.3c-2.5-1.1-5.1-1.9-7.9-2.4c-0.3,0.6-0.7,1.4-1,2c-2.9-0.4-5.8-0.4-8.7,0c-0.3-0.6-0.7-1.4-1-2 c-2.8,0.5-5.4,1.3-7.9,2.4c-5,7.2-6.3,14.2-5.6,21.1c3.3,2.3,6.5,3.8,9.6,4.7c0.8-1,1.5-2.1,2.1-3.3c-1.1-0.4-2.2-0.9-3.2-1.5 c0.3-0.2,0.5-0.4,0.8-0.6c6.3,2.8,13,2.8,19.2,0c0.3,0.2,0.5,0.4,0.8,0.6c-1,0.6-2.1,1.1-3.2,1.5c0.6,1.1,1.3,2.2,2.1,3.3 c3.1-0.9,6.3-2.4,9.6-4.7C39.7,21.4,37.5,14.4,33.2,8.3z M13.7,25.1c-1.9,0-3.4-1.7-3.4-3.7s1.5-3.7,3.4-3.7c1.9,0,3.5,1.7,3.4,3.7 C17.1,23.4,15.6,25.1,13.7,25.1z M26.3,25.1c-1.9,0-3.4-1.7-3.4-3.7s1.5-3.7,3.4-3.7c1.9,0,3.5,1.7,3.4,3.7 C29.7,23.4,28.2,25.1,26.3,25.1z"/></svg>
@@ -265,7 +265,7 @@
 </section>
 
 <footer>
-  <p>Bigfoot // Assisted by Zero, Zer/Core/ assistant</p>
+  <p>© 2026 bigfoot — written by hand, no template</p>
 </footer>
 
 <!-- Scroll reveal + active nav -->
