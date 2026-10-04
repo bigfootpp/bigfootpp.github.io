@@ -10,14 +10,14 @@
 }
 
 :root {
-  --bg: #111111;
-  --bg-card: #161616;
-  --bg-card-hover: #1a1a1a;
-  --border: rgba(0, 255, 65, 0.15);
-  --border-strong: rgba(0, 255, 65, 0.35);
-  --text: #d0d0d0;
-  --text-bright: #e8e8e8;
-  --text-dim: #7a7a7a;
+  --bg: #080808;
+  --bg-card: #0d0d0d;
+  --bg-card-hover: #141414;
+  --border: rgba(0, 255, 65, 0.22);
+  --border-strong: rgba(0, 255, 65, 0.45);
+  --text: #ececec;
+  --text-bright: #ffffff;
+  --text-dim: #b0b0b0;
   --accent: #00ff41;
   --accent-dim: #00cc33;
   --accent-glow: rgba(0, 255, 65, 0.4);
@@ -40,31 +40,9 @@ body {
   position: relative;
 }
 
-/* Scanlines overlay */
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background: repeating-linear-gradient(
-    0deg,
-    transparent,
-    transparent 2px,
-    rgba(0, 0, 0, 0.05) 2px,
-    rgba(0, 0, 0, 0.05) 4px
-  );
-  pointer-events: none;
-  z-index: 9999;
-}
-
-/* CRT glow on main content */
-body::after {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background: radial-gradient(ellipse at center, transparent 0%, rgba(0, 0, 0, 0.15) 100%);
-  pointer-events: none;
-  z-index: 9998;
-}
+/* Overlays désactivés : laissaient un voile gris sur toute la page */
+/* body::before — scanlines supprimées */
+/* body::after — vignette CRT supprimée */
 
 /* === Animated Background === */
 .bg-grid {
@@ -106,7 +84,7 @@ body::after {
   right: 0;
   z-index: 100;
   padding: 1rem 2rem;
-  background: rgba(17, 17, 17, 0.95);
+  background: rgba(8, 8, 8, 0.98);
   border-bottom: 1px solid var(--border);
 }
 
@@ -157,7 +135,7 @@ body::after {
   padding: 0.5rem 1rem;
   font-size: 0.85rem;
   font-weight: 400;
- color: #e8e8e8;
+  color: #f5f5f5;
   transition: color 0.2s;
   position: relative;
 }
@@ -534,12 +512,11 @@ body::after {
   width: 100%;
   height: auto;
   display: block;
-  filter: grayscale(60%) contrast(1.1);
   transition: filter 0.4s;
 }
 
 .project-card:hover .project-img-wrap img {
-  filter: grayscale(0%) contrast(1);
+  filter: brightness(1.05);
 }
 
 .project-info {
