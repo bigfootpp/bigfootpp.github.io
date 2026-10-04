@@ -122,22 +122,29 @@ body::after {
 .nav-logo {
   display: flex;
   align-items: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text-bright);
+  text-decoration: none;
+  white-space: nowrap;
 }
 
-.nav-logo-img {
-  height: 2.2rem;
-  width: auto;
-  display: block;
-  border: 1px solid var(--border);
-  padding: 0.2rem;
-  filter: grayscale(100%) brightness(1.2) sepia(1) hue-rotate(80deg) saturate(1.5);
-  transition: all 0.3s ease;
+.nav-logo::before {
+  content: '>';
+  color: var(--accent);
+  margin-right: 0.5rem;
+  font-weight: 400;
 }
 
-.nav-logo:hover .nav-logo-img {
-  border-color: var(--accent);
-  filter: grayscale(0%) brightness(1.1) drop-shadow(0 0 8px var(--accent-glow));
-  transform: scale(1.05);
+.nav-logo .logo-cursor {
+  color: var(--accent);
+  animation: blink 1s step-end infinite;
+  font-weight: 400;
+}
+
+.nav-logo:hover {
+  color: var(--accent);
 }
 
 .nav-links {
@@ -533,29 +540,6 @@ body::after {
 
 .project-card:hover .project-img-wrap img {
   filter: grayscale(0%) contrast(1);
-}
-
-.project-video-wrap {
-  position: relative;
-  width: 100%;
-  max-width: 22rem;
-  overflow: hidden;
-  background: #000;
-  aspect-ratio: 16 / 9;
-  border: 1px solid var(--border);
-}
-
-.project-video-wrap.wide {
-  max-width: 100%;
-  margin-top: 1.5rem;
-}
-
-.project-video-wrap iframe {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
 }
 
 .project-info {
