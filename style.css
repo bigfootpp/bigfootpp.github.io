@@ -358,54 +358,6 @@ body {
   line-height: 1.6;
 }
 
-/* Process Block */
-.process-block {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  padding: 2rem;
-}
-
-.process-block h4 {
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: var(--text-bright);
-  margin-bottom: 1.5rem;
-}
-
-.process-block h4::before {
-  content: '# ';
-  color: var(--accent);
-}
-
-.process-steps {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-  gap: 1.5rem;
-}
-
-.process-step {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
-.step-num {
-  font-size: 0.7rem;
-  color: var(--accent);
-  opacity: 0.6;
-}
-
-.process-step strong {
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: var(--text-bright);
-}
-
-.process-step span {
-  font-size: 0.8rem;
-  color: var(--text-dim);
-}
-
 .section-header {
   text-align: left;
   margin-bottom: 3rem;
@@ -798,22 +750,6 @@ section {
   background: var(--accent);
   color: var(--bg);
   box-shadow: 0 0 30px var(--accent-glow), 0 0 60px var(--accent-glow);
-}
-
-/* === Footer === */
-footer {
-  position: relative;
-  z-index: 1;
-  padding: 2rem;
-  font-size: 0.75rem;
-  color: var(--text-dim);
-  border-top: 1px solid var(--border);
-}
-
-footer p::before {
-  content: '> ';
-  color: var(--accent);
-  opacity: 0.5;
 }
 
 /* === Reveal Animation === */

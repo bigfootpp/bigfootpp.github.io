@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="darkreader" content="NOT-DARK">
   <title>bigfoot — luau systems</title>
-  <meta name="description" content="bigfoot, luau scripter for roblox. boss ai, npc logic, physics, backends. readable code, no fluff.">
+  <meta name="description" content="bigfoot, backend luau scripter for roblox. game loops, datastore, backends. boss ai + physics on request.">
   <link href="https://fonts.googleapis.com/css2?display=swap&family=JetBrains+Mono:wght@300;400;500;600;700" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -33,13 +33,13 @@
 <section class="hero" id="top">
   <div class="hero-badge">[status: open]</div>
   <h1><span id="typing-text" data-text="luau systems"></span><span class="typing-cursor">|</span></h1>
-  <p class="hero-sub" id="hero-sub" data-text="boss ai, npc logic, backends. you get readable code + a config, not a black box. no ui, no builds, just systems."></p>
+  <p class="hero-sub" id="hero-sub" data-text="backend dev: game loops, datastore, server logic, boss ai, physics."></p>
   <div class="hero-skills">
-    <span class="skill-tag">pathfinding</span>
-    <span class="skill-tag">state-machines</span>
-    <span class="skill-tag">ball-physics</span>
-    <span class="skill-tag">http + llm</span>
     <span class="skill-tag">datastore</span>
+    <span class="skill-tag">game-loop</span>
+    <span class="skill-tag">server-logic</span>
+    <span class="skill-tag">ball-physics</span>
+    <span class="skill-tag">boss-ai</span>
   </div>
   <div class="hero-actions">
     <a href="#work" class="btn-primary">ls ./work</a>
@@ -56,51 +56,31 @@
   <div class="skills-grid">
     <div class="skill-card">
       <div class="skill-icon">
-        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
       </div>
-      <h4>boss ai</h4>
-      <p>7 attacks, patrol / chase switching, cooldowns + hitboxes handled. doesn't stand still staring at walls.</p>
+      <h4>backend</h4>
+      <p>rounds, datastore, leaderstats, server logic. core game infrastructure, built to last.</p>
     </div>
     <div class="skill-card">
       <div class="skill-icon">
         <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
       </div>
       <h4>ball physics</h4>
-      <p>trajectory prediction for soccer stuff. bounces, interception points, no jitter.</p>
+      <p>trajectory prediction for soccer game. bounces, interception points, stable at full speed.</p>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+      </div>
+      <h4>boss ai</h4>
+      <p>multi-attack bosses: patrol / chase with pathfinding + cooldowns.</p>
     </div>
     <div class="skill-card">
       <div class="skill-icon">
         <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
       </div>
-      <h4>http + llm</h4>
-      <p>npcs that talk through an api. keeps context, rate-limits + retries so it doesn't die mid-game.</p>
-    </div>
-    <div class="skill-card">
-      <div class="skill-icon">
-        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-      </div>
-      <h4>game loop</h4>
-      <p>rounds, datastore, leaderstats, admin commands. the boring stuff, done right.</p>
-    </div>
-  </div>
-  <div class="process-block">
-    <h4>how this goes</h4>
-    <div class="process-steps">
-      <div class="process-step">
-        <span class="step-num">01</span>
-        <strong>you explain</strong>
-        <span>send a vid + budget. i say yes or no</span>
-      </div>
-      <div class="process-step">
-        <span class="step-num">02</span>
-        <strong>i build</strong>
-        <span>small updates, no disappearing</span>
-      </div>
-      <div class="process-step">
-        <span class="step-num">03</span>
-        <strong>you get source</strong>
-        <span>commented + config on top</span>
-      </div>
+      <h4>tools + admin</h4>
+      <p>admin commands, doors, game tools. short turnaround.</p>
     </div>
   </div>
 </section>
@@ -117,7 +97,7 @@
     <div class="project-info full-width">
       <span class="project-type">commission — piggy boss</span>
       <h3>piggy boss ai</h3>
-      <p>7 attacks. patrols, chases, picks attacks by range + line of sight. cooldowns, anims, hitboxes all wired.</p>
+      <p>7 attacks. patrol and chase with pathfinding, attack selection by range and line of sight. cooldowns, animations and hitboxes.</p>
       <div class="project-tags">
         <span class="tag">statemachine</span>
         <span class="tag">pathfinding</span>
@@ -135,13 +115,12 @@
       </div>
     </div>
     <div class="project-info">
-      <span class="project-type">shipped — ai npc</span>
+      <span class="project-type">personal — ai npc</span>
       <h3>llm npc</h3>
-      <p>npc you can actually talk to. remembers context, stays in character. won't crash when roblox throttles.</p>
+      <p>conversational npc with context memory.</p>
       <div class="project-tags">
         <span class="tag">httpservice</span>
         <span class="tag">llm</span>
-        
       </div>
     </div>
   </div>
@@ -154,9 +133,9 @@
       </div>
     </div>
     <div class="project-info">
-      <span class="project-type">shipped — wordchain</span>
+      <span class="project-type">personal — wordchain</span>
       <h3>wordchain</h3>
-      <p>turn-based word game. server checks every letter, validates words, runs timers. client trusted with nothing.</p>
+      <p>turn-based word game. server checks every letter, validates words, runs timers.</p>
       <div class="project-tags">
         <span class="tag">server-side</span>
                 <span class="tag">multiplayer</span>
@@ -168,7 +147,7 @@
   <div class="tech-demos">
     <div class="section-header" style="margin-top: 3rem;">
       <span class="section-tag">ls ./demos/</span>
-      <h2>stuff that works</h2>
+      <h2>verified systems</h2>
     </div>
     <div class="demo-grid">
       <div class="demo-card">
@@ -176,7 +155,7 @@
           <h4>anim statemachine</h4>
           <span class="demo-status">working</span>
         </div>
-        <p>combat anims with blending + input buffering. no moonwalk transitions.</p>
+        <p>animations framework for animation state transitions.</p>
         
       </div>
       <div class="demo-card">
@@ -184,7 +163,7 @@
           <h4>ball prediction</h4>
           <span class="demo-status">working</span>
         </div>
-        <p>shows where the ball lands + who gets there first. bounce math included.</p>
+        <p>ball and bounce physics with network replication</p>
         
       </div>
     </div>
@@ -203,21 +182,21 @@
  <h4>small scripts</h4>
       <div class="price-amount">3,000</div>
       <div class="price-currency">R$ min</div>
-      <p>tools, doors, admin commands, basic npcs.</p>
+      <p>tools, doors, admin commands.</p>
     </div>
     <div class="price-card highlight">
       <div class="price-popular">picked most</div>
       <h4>game systems</h4>
       <div class="price-amount">8,000</div>
       <div class="price-currency">R$ usual</div>
-      <p>rounds, backends, gameplay stuff.</p>
+      <p>rounds, backends, gameplay mechanics.</p>
     </div>
     <div class="price-card">
       <div class="price-popular">heavy</div>
  <h4>big systems</h4>
       <div class="price-amount">15,000</div>
       <div class="price-currency">R$+ and up</div>
-      <p>boss ai, physics, full loops, llm stuff.</p>
+      <p>boss ai, physics, full loops, backends.</p>
     </div>
   </div>
   <div class="pricing-terms">
@@ -231,12 +210,12 @@
     </div>
     <div class="term">
       <strong>you get</strong>
-      <span>source + config, commented</span>
+      <span>source + config</span>
     </div>
   </div>
   <div class="pricing-note">
     <span class="note-icon">!</span>
-    <p>no revshare, no staff roles, no “no budget” projects. vague idea? we'll scope it first.</p>
+    <p>no revshare, no staff roles</p>
   </div>
 </section>
 
@@ -255,7 +234,7 @@
         <li>budget</li>
         <li>deadline, if any</li>
       </ul>
-      <p>i reply when i'm around. no forms.</p>
+      <p>response when available.</p>
     </div>
     <a href="https://discord.com/users/823953434276790313" class="discord-btn" target="_blank" rel="noopener">
       <svg viewBox="0 0 40 40" width="1.4em" height="1.4em" fill="currentColor"><path d="M33.2,8.3c-2.5-1.1-5.1-1.9-7.9-2.4c-0.3,0.6-0.7,1.4-1,2c-2.9-0.4-5.8-0.4-8.7,0c-0.3-0.6-0.7-1.4-1-2 c-2.8,0.5-5.4,1.3-7.9,2.4c-5,7.2-6.3,14.2-5.6,21.1c3.3,2.3,6.5,3.8,9.6,4.7c0.8-1,1.5-2.1,2.1-3.3c-1.1-0.4-2.2-0.9-3.2-1.5 c0.3-0.2,0.5-0.4,0.8-0.6c6.3,2.8,13,2.8,19.2,0c0.3,0.2,0.5,0.4,0.8,0.6c-1,0.6-2.1,1.1-3.2,1.5c0.6,1.1,1.3,2.2,2.1,3.3 c3.1-0.9,6.3-2.4,9.6-4.7C39.7,21.4,37.5,14.4,33.2,8.3z M13.7,25.1c-1.9,0-3.4-1.7-3.4-3.7s1.5-3.7,3.4-3.7c1.9,0,3.5,1.7,3.4,3.7 C17.1,23.4,15.6,25.1,13.7,25.1z M26.3,25.1c-1.9,0-3.4-1.7-3.4-3.7s1.5-3.7,3.4-3.7c1.9,0,3.5,1.7,3.4,3.7 C29.7,23.4,28.2,25.1,26.3,25.1z"/></svg>
@@ -263,10 +242,6 @@
     </a>
   </div>
 </section>
-
-<footer>
-  <p>© 2026 bigfoot — written by hand, no template</p>
-</footer>
 
 <!-- Scroll reveal + active nav -->
 <script src="main.js"></script></body>
