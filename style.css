@@ -269,12 +269,6 @@ body {
   background: rgba(0, 255, 65, 0.05);
   border: 1px solid var(--border);
   color: var(--text-dim);
-  transition: all 0.2s;
-}
-
-.skill-tag:hover {
-  border-color: var(--accent);
-  color: var(--accent);
 }
 
 .hero-actions {
@@ -332,12 +326,6 @@ body {
   background: var(--bg-card);
   border: 1px solid var(--border);
   padding: 2rem;
-  transition: border-color 0.25s, box-shadow 0.25s;
-}
-
-.skill-card:hover {
-  border-color: var(--border-strong);
-  box-shadow: 0 0 30px rgba(0, 255, 65, 0.1);
 }
 
 .skill-icon {
@@ -349,11 +337,6 @@ body {
   border: 1px solid var(--border);
   color: var(--accent);
   margin-bottom: 1rem;
-}
-
-.skill-card:hover .skill-icon {
-  border-color: var(--accent);
-  box-shadow: 0 0 15px var(--accent-glow);
 }
 
 .skill-card h4 {
@@ -465,12 +448,6 @@ body {
   background: var(--bg-card);
   border: 1px solid var(--border);
   margin-bottom: 2rem;
-  transition: border-color 0.25s, box-shadow 0.25s;
-}
-
-.project-card:hover {
-  border-color: var(--border-strong);
-  box-shadow: 0 0 30px rgba(0, 255, 65, 0.1);
 }
 
 .project-card.reverse {
@@ -512,11 +489,6 @@ body {
   width: 100%;
   height: auto;
   display: block;
-  transition: filter 0.4s;
-}
-
-.project-card:hover .project-img-wrap img {
-  filter: brightness(1.05);
 }
 
 .project-info {
@@ -574,12 +546,6 @@ body {
   background: rgba(0, 255, 65, 0.05);
   border: 1px solid var(--border);
   color: var(--text-dim);
-  transition: all 0.2s;
-}
-
-.project-card:hover .tag {
-  border-color: var(--border-strong);
-  color: var(--accent);
 }
 
 /* === Sections === */
@@ -606,12 +572,6 @@ section {
   background: var(--bg-card);
   border: 1px solid var(--border);
   padding: 2rem;
-  transition: border-color 0.25s, box-shadow 0.25s;
-}
-
-.demo-card:hover {
-  border-color: var(--border-strong);
-  box-shadow: 0 0 30px rgba(0, 255, 65, 0.1);
 }
 
 .demo-header {
@@ -677,12 +637,6 @@ section {
   border: 1px solid var(--border);
   padding: 2rem;
   text-align: left;
-  transition: border-color 0.25s, box-shadow 0.25s;
-}
-
-.price-card:hover {
-  border-color: var(--border-strong);
-  box-shadow: 0 0 30px rgba(0, 255, 65, 0.1);
 }
 
 .price-card.highlight {
