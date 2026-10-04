@@ -591,11 +591,6 @@ section {
   text-align: left;
 }
 
-.price-card.highlight {
-  border-color: var(--accent);
-  box-shadow: 0 0 20px var(--accent-glow);
-}
-
 .price-popular {
   position: absolute;
   top: -0.5rem;
