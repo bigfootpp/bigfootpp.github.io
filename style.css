@@ -260,8 +260,8 @@ body {
 }
 
 .btn-primary:hover {
-  background: var(--accent);
-  color: var(--bg);
+  background: transparent;
+  color: var(--accent);
 }
 
 .btn-ghost {
@@ -712,6 +712,7 @@ section {
 .contact-actions {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 1rem;
 }
 
@@ -731,6 +732,31 @@ section {
 .github-btn:hover {
   border-color: var(--accent);
   color: var(--accent);
+}
+
+/* === Button hover prefix (same as nav, pushes content) === */
+.btn-primary::before,
+.btn-ghost::before,
+.lib-btn::before,
+.discord-btn::before,
+.github-btn::before {
+  content: '>';
+  max-width: 0;
+  margin-right: 0;
+  opacity: 0;
+  overflow: hidden;
+  flex-shrink: 0;
+  transition: opacity 0.2s, max-width 0.2s, margin-right 0.2s;
+}
+
+.btn-primary:hover::before,
+.btn-ghost:hover::before,
+.lib-btn:hover::before,
+.discord-btn:hover::before,
+.github-btn:hover::before {
+  max-width: 1rem;
+  margin-right: 0.5rem;
+  opacity: 1;
 }
 
 /* === Reveal Animation === */
