@@ -147,13 +147,15 @@ body {
 }
 
 .nav-cta:hover {
-  background: var(--accent) !important;
-  color: var(--bg) !important;
+  border-color: var(--accent) !important;
+  color: var(--accent) !important;
+  background: transparent !important;
 }
 
 .nav-cta.active {
-  background: var(--accent) !important;
-  color: var(--bg) !important;
+  border-color: var(--accent) !important;
+  color: var(--accent) !important;
+  background: transparent !important;
 }
 
 /* === Hero === */
@@ -640,8 +642,8 @@ section {
 }
 
 .discord-btn:hover {
-  background: var(--accent);
-  color: var(--bg);
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 /* === Libs === */
