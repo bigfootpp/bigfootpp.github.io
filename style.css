@@ -176,7 +176,6 @@ body {
 .nav-cta:hover {
   background: var(--accent) !important;
   color: var(--bg) !important;
-  box-shadow: 0 0 20px var(--accent-glow);
 }
 
 .nav-cta.active {
@@ -237,11 +236,6 @@ body {
   51%, 100% { opacity: 0; }
 }
 
-.gradient-text {
-  color: var(--accent);
-  text-shadow: 0 0 30px var(--accent-glow);
-}
-
 .hero-sub {
   font-size: 1rem;
   font-weight: 400;
@@ -288,13 +282,11 @@ body {
   font-size: 0.9rem;
   border: 1px solid var(--accent);
   transition: all 0.25s;
-  box-shadow: 0 0 20px var(--accent-glow);
 }
 
 .btn-primary:hover {
   background: var(--accent);
   color: var(--bg);
-  box-shadow: 0 0 30px var(--accent-glow), 0 0 60px var(--accent-glow);
 }
 
 .btn-ghost {
@@ -672,13 +664,11 @@ section {
   font-weight: 500;
   border: 1px solid var(--accent);
   transition: all 0.25s;
-  box-shadow: 0 0 20px var(--accent-glow);
 }
 
 .discord-btn:hover {
   background: var(--accent);
   color: var(--bg);
-  box-shadow: 0 0 30px var(--accent-glow), 0 0 60px var(--accent-glow);
 }
 
 /* === Libs === */
