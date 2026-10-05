@@ -132,7 +132,7 @@ updateActiveNav();
     }
 
     draw() {
-      ctx.fillStyle = 'rgba(0, 255, 65, ' + this.alpha.toFixed(3) + ')';
+      ctx.fillStyle = 'rgba(255, 255, 255, ' + this.alpha.toFixed(3) + ')';
       ctx.font = this.size + 'px "JetBrains Mono", monospace';
       ctx.fillText(this.char, this.x, this.y);
     }
