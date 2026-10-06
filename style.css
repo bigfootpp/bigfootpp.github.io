@@ -404,10 +404,34 @@ body {
   max-width: 14rem;
 }
 
-.project-img-wrap img {
+.project-img-wrap img,
+.project-img-wrap video {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.project-video-wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--border);
+}
+
+.project-video-wrap.wide {
+  max-width: 100%;
+  margin-top: 1.5rem;
+}
+
+.project-video-wrap video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: none;
 }
 
 .project-info {
