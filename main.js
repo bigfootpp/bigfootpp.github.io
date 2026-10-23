@@ -158,3 +158,18 @@ updateActiveNav();
   window.addEventListener('mouseout', () => { mouse.x = null; mouse.y = null; });
   resize(); init(); animate();
 })();
+
+// ====================
+// VIDEO PLAYER (click to play)
+// ====================
+document.querySelectorAll('[data-video-poster]').forEach((poster) => {
+  const video = poster.parentElement.querySelector('video');
+
+  const play = () => {
+    poster.classList.add('hidden');
+    video.setAttribute('controls', '');
+    video.play();
+  };
+
+  poster.addEventListener('click', play);
+});
